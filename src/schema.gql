@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Todo {
+  """Unique identifier for the Todo"""
+  id: Int!
+
+  """Title of the Todo"""
+  title: String!
+
+  """Description of the Todo"""
+  description: String!
+
+  """Whether or not the Todo is done"""
+  done: Boolean!
+}
+
+type Query {
+  todos: [Todo!]!
+}
