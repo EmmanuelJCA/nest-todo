@@ -20,3 +20,15 @@ type Query {
   todos: [Todo!]!
   todo(id: Int!): Todo!
 }
+
+type Mutation {
+  create(createTodoInput: CreateTodoInput!): Todo!
+}
+
+input CreateTodoInput {
+  """Title of the todo"""
+  title: String!
+
+  """Description of the todo"""
+  description: String!
+}
