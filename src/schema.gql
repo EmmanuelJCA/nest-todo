@@ -17,7 +17,7 @@ type Todo {
 }
 
 type Query {
-  todos: [Todo!]!
+  todos(status: Boolean): [Todo!]!
   todo(id: Int!): Todo!
 }
 
