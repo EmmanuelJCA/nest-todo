@@ -50,8 +50,8 @@ export class TodoService {
     return todo;
   }
 
-  update(updateTodoInput: UpdateTodoInput): Todo {
-    const { id, title, description, done } = updateTodoInput;
+  update(id: number, updateTodoInput: UpdateTodoInput): Todo {
+    const { title, description, done } = updateTodoInput;
 
     const todoToUpdate = this.findOne(id);
 
