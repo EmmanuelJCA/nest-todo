@@ -18,4 +18,5 @@ type Todo {
 
 type Query {
   todos: [Todo!]!
+  todo(id: Int!): Todo!
 }

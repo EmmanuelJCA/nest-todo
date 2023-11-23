@@ -27,4 +27,12 @@ export class TodoService {
   findAll(): Todo[] {
     return this.todos;
   }
+
+  findOne(id: number): Todo {
+    const todo = this.todos.find((todo) => todo.id === id);
+
+    if (!todo) throw new Error('Todo not found');
+
+    return todo;
+  }
 }
